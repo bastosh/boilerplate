@@ -1,19 +1,54 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    padding: 1rem;
+}
+
+#langChanger a {
+    text-decoration: none;
+    margin: 0 .5rem;
 }
 
 h1 {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#countdown p {
+    font-size: .8rem;
+}
+
+.time {
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 700px){
     h1 {
         font-size: 3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .time {
+        font-size: 2rem;
+    }
+    #countdown p {
+        font-size: 1rem;
     }
 }
