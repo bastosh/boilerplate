@@ -1,0 +1,10 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Web Projects",
+  "scripts": {
+    "serve": "browser-sync start --server 'src' --files 'src'"
+  },
+  "author": "Bastoche",
+  "license": "MIT"
+}
