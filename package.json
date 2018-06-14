@@ -6,5 +6,9 @@
     "serve": "browser-sync start --server 'src' --files 'src'"
   },
   "author": "Bastoche",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4"
+  }
 }
