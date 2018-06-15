@@ -1,0 +1,11 @@
+{
+	"token": {
+		"hello world":"bonjour monde",
+		"a new project is coming soon":"projet en approche",
+		"COMING SOON":"BIENTÔT",
+		"DAYS":"JOURS",
+		"HOURS":"HEURES",
+		"MINUTES":"MINUTES",
+		"SECONDS":"SECONDES"
+	}
+}
