@@ -22,8 +22,8 @@ gulp.task('img', function() {
 );
 
 gulp.task('copy', function() {
-   gulp.src('src/js/langpack')
-       .pipe(gulp.dest('dist/js'));
+   gulp.src('src/js/langpack/*.json')
+       .pipe(gulp.dest('dist/js/langpack'));
     gulp.src('src/flags/**/*')
         .pipe(gulp.dest('dist/flags'));
 });
@@ -41,6 +41,4 @@ gulp.task('deploy', function() {
         .pipe(ghPages());
 });
 
-gulp.task('prod', ['css', 'copy', 'img']);
-
-gulp.task('default', ['css', 'copy']);
+gulp.task('default', ['css', 'copy', 'img', 'useref']);

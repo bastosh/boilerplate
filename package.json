@@ -4,7 +4,9 @@
   "description": "Boilerplate for Web Projects",
   "scripts": {
     "serve": "browser-sync start --server 'src' --files 'src'",
-    "stylus": "stylus -u nib -u rupture -u s-grid -u typographic -w src/stylus/app.styl -o src/css"
+    "stylus": "stylus -u nib -u rupture -u s-grid -u typographic -w src/stylus/app.styl -o src/css",
+    "clean": "rm -rf dist",
+    "deploy": "gulp && gulp deploy"
   },
   "author": "Bastoche",
   "license": "MIT",
