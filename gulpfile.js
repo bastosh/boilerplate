@@ -7,13 +7,6 @@ var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 
 
-gulp.task('css', function() {
-    return gulp.src('src/css/*.css')
-        .pipe(cleanCSS())
-        .pipe(gulp.dest('dist/css'));
-});
-
-
 gulp.task('img', function() {
     gulp.src('src/img/*')
         .pipe(imagemin())
@@ -41,4 +34,4 @@ gulp.task('deploy', function() {
         .pipe(ghPages());
 });
 
-gulp.task('default', ['css', 'copy', 'img', 'useref']);
+gulp.task('default', ['copy', 'img', 'useref']);
