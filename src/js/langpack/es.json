@@ -1,5 +1,7 @@
 {
 	"token": {
+		"hello world":"hola mundo",
+		"a new project is coming soon":"un nuevo proyecto llegará pronto",
 		"COMING SOON":"MUY PRONTO",
 		"DAYS":"DÍAS",
 		"HOURS":"HORAS",
