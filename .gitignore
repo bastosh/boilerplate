@@ -1,6 +1,6 @@
 .DS_Store
 .idea
-dist
+public
 node_modules
 .publish
 .sass-cache

@@ -7,7 +7,6 @@
     "stylus": "stylus -u nib -u rupture -u s-grid -u typographic -w src/stylus/app.styl -o src/css",
     "foundation": "sass --watch src/foundation:src/css",
     "bootstrap":"sass --watch src/bootstrap:src/css",
-    "clean": "rm -rf dist",
     "deploy": "gulp && gulp deploy",
     "start": "npm run serve & npm run stylus",
     "start-foundation": "npm run serve & npm run foundation",

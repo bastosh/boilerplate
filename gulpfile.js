@@ -10,15 +10,15 @@ var uglify = require('gulp-uglify');
 gulp.task('img', function() {
     gulp.src('src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('public/img'));
     }
 );
 
 gulp.task('copy', function() {
    gulp.src('src/js/langpack/*.json')
-       .pipe(gulp.dest('dist/js/langpack'));
+       .pipe(gulp.dest('public/js/langpack'));
     gulp.src('src/flags/**/*')
-        .pipe(gulp.dest('dist/flags'));
+        .pipe(gulp.dest('public/flags'));
 });
 
 gulp.task('useref', function () {
@@ -26,11 +26,11 @@ gulp.task('useref', function () {
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', cleanCSS()))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('public'));
 });
 
 gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
+    return gulp.src('./public/**/*')
         .pipe(ghPages());
 });
 
