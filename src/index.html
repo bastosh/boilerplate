@@ -6,57 +6,29 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Project Starter</title>
+    <!--<link rel="stylesheet" href="css/debug.css">-->
     <!-- build:css css/app.css -->
-    <link rel="stylesheet" href="css/flag-icon.css">
     <link rel="stylesheet" href="css/app.css">
     <!-- endbuild -->
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+        }
+        main {
+            place-self: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div id="langChanger">
-            <a href="#" onclick="window.lang.change('en'); return false;">EN
-                <span class="flag-icon flag-icon-gb"></span></a>
-            <a href="#" onclick="window.lang.change('fr'); return false;">FR
-                <span class="flag-icon flag-icon-fr"></span></a>
-            <a href="#" onclick="window.lang.change('es'); return false;">ES
-                <span class="flag-icon flag-icon-es"></span></a>
-            <a href="#" onclick="window.lang.change('de'); return false;">DE
-                <span class="flag-icon flag-icon-de"></span></a>
-            <a href="#" onclick="window.lang.change('it'); return false;">IT
-                <span class="flag-icon flag-icon-it"></span></a>
-        </div>
-    </header>
 
     <main>
-        <h1 lang="en">hello world</h1>
-        <p class="subtitle" lang="en">a new project is coming soon</p>
-        <div id="countdown">
-            <div>
-                <div id="days" class="time"></div>
-                <p lang="en">DAYS</p>
-            </div>
-            <div>
-                <div id="hours" class="time"></div>
-                <p lang="en">HOURS</p>
-            </div>
-            <div>
-                <div id="minutes" class="time"></div>
-                <p lang="en">MINUTES</p>
-            </div>
-            <div>
-                <div id="seconds" class="time"></div>
-                <p lang="en">SECONDS</p>
-            </div>
-        </div>
+        <h1 >hello world</h1>
+        <p>a new project is coming soon</p>
     </main>
 
-    <footer>2018 • Web Project Starter</footer>
-
     <!-- build:js js/app.js -->
-    <script src="js/jquery-2.2.0.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/js.cookie.js"></script>
-    <script src="js/jquery-lang.js"></script>
     <script src="js/app.js"></script>
     <!-- endbuild -->
 </body>

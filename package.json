@@ -6,16 +6,19 @@
     "serve": "browser-sync start --server 'src' --files 'src'",
     "stylus": "stylus -u nib -u rupture -u s-grid -u typographic -w src/stylus/app.styl -o src/css",
     "foundation": "sass --watch src/foundation:src/css",
-    "bootstrap":"sass --watch src/bootstrap:src/css",
+    "bootstrap": "sass --watch src/bootstrap:src/css",
+    "bulma": "sass --watch src/bulma:src/css",
     "deploy": "gulp && gulp deploy",
     "start": "npm run serve & npm run stylus",
     "start-foundation": "npm run serve & npm run foundation",
-    "start-bootstrap":"npm run serve & npm run bootstrap"
+    "start-bootstrap": "npm run serve & npm run bootstrap",
+    "start-bulma": "npm run serve & npm run bulma"
   },
   "author": "Sébastien Pereda",
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.1.1",
+    "bulma": "^0.7.1",
     "foundation-sites": "^6.4.4-rc1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.4",
